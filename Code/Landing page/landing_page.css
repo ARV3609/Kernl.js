@@ -1,0 +1,177 @@
+body {
+    background-color: var(--primary-bg);
+}
+
+/* Layout & Alignment */
+header {
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: var(--primary-bg);
+}
+
+header .button-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    /* Space between GitHub count and Button */
+}
+
+/* Logo Styling */
+header .logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--color-dark-blue);
+}
+
+/* GitHub Section */
+.github-stars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.github-stars span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--color-dark-blue);
+}
+
+header .github-stars img {
+    width: 22px;
+    height: 22px;
+    filter: invert(33%) sepia(7%) saturate(4094%) hue-rotate(175deg) brightness(90%) contrast(87%);
+}
+
+/* Get Started Button */
+.get-in {
+    background-color: var(--color-dark-blue);
+    padding: 10px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-in span {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--primary-bg);
+    text-transform: uppercase;
+    /* Matches the 'GET STARTED' in your image */
+    letter-spacing: 0.5px;
+}
+
+/* First section */
+/* Hero Section Container */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 650px;
+}
+
+/* Typography */
+.title {
+    display: block;
+    font-family: var(--primary-font);
+    font-size: 48px;
+    font-weight: 800;
+    color: var(--color-dark-blue);
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.description {
+    display: block;
+    font-family: var(--primary-font);
+    font-size: 18px;
+    color: #6a8096;
+    /* Muted blue-grey */
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Hero Buttons Row */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 14px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-align: center;
+    font-family: var(--primary-font);
+}
+
+.btn-primary {
+    background-color: var(--color-dark-blue);
+    color: white;
+    border: 1px solid var(--color-dark-blue);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-dark-blue);
+    border: 1px solid #d1d9e0;
+    /* Light grey-blue border */
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+.btn-secondary:hover {
+    background-color: #f8fafd;
+}
+
+/* Animation Container */
+.hero-animation {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#lottie-container {
+    width: 400px;
+    height: 400px;
+}
+
+/* Responsive for Mobile */
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        margin-bottom: 50px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-animation {
+        justify-content: center;
+    }
+}

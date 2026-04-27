@@ -1,0 +1,12 @@
+# OS files
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# After Effects
+*.aep
+
+# Illustrator source (if not needed in repo)
+*.ai
