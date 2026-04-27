@@ -121,6 +121,7 @@ header .github-stars img {
     transition: all 0.2s ease;
     text-align: center;
     font-family: var(--primary-font);
+    text-decoration: none;
 }
 
 .btn-primary {
@@ -133,7 +134,11 @@ header .github-stars img {
     background-color: transparent;
     color: var(--color-dark-blue);
     border: 1px solid #d1d9e0;
-    /* Light grey-blue border */
+    text-decoration: none;
+}
+
+.hero-buttons a {
+    text-decoration: none;
 }
 
 .btn-primary:hover {
